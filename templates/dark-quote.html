@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap');
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1080px; height:1350px; background:#12161f; }
+  .canvas {
+    width:1080px; height:1350px;
+    background:#12161f;
+    position:relative;
+    font-family:'Inter', sans-serif;
+    padding: 96px 88px;
+  }
+  .eyebrow {
+    font-family:'JetBrains Mono', monospace;
+    font-weight:600;
+    font-size:15px;
+    letter-spacing:3px;
+    color:#e09b5a;
+    text-transform:uppercase;
+    margin-bottom:22px;
+  }
+  h1 {
+    font-weight:800;
+    font-size:60px;
+    line-height:1.18;
+    color:#f4f1ea;
+    max-width:880px;
+    letter-spacing:-0.5px;
+  }
+  h1 .accent { color:#5aa06e; }
+  p.body {
+    margin-top:34px;
+    font-size:30px;
+    line-height:1.5;
+    color:#c7ccd6;
+    max-width:800px;
+    font-weight:400;
+  }
+  .footer {
+    position:absolute;
+    left:88px; right:88px; bottom:80px;
+    display:flex; align-items:center; gap:12px;
+  }
+  .logo-badge {
+    width:34px; height:34px; border-radius:50%;
+    border:2px solid #f4f1ea;
+    display:flex; align-items:center; justify-content:center;
+    position:relative;
+  }
+  .logo-badge::after{
+    content:''; position:absolute; width:11px; height:2px; background:#e09b5a;
+    top:50%; left:50%; transform-origin:left center; transform:rotate(-35deg);
+  }
+  .logo-text {
+    font-weight:800; font-size:20px; color:#f4f1ea; letter-spacing:0.5px;
+  }
+  .logo-tag {
+    font-family:'JetBrains Mono', monospace; font-weight:600; font-size:13px;
+    color:#12161f; background:#e09b5a; padding:3px 8px; border-radius:4px;
+  }
+  .footer-domain {
+    font-family:'JetBrains Mono', monospace; font-size:15px; color:#7d8494;
+    margin-left:4px;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="eyebrow">Comparación</div>
+    <h1>El día que Netflix te suba a <span class="accent">US$25</span>, nadie se va a sorprender.</h1>
+    <p class="body">Ya asumimos que todo sube todos los meses, sin avisar. MOY IQ no: Starter es gratis para siempre, y Pro tiene precio fijo desde el día uno: US$4.99/mes o US$39.99/año.</p>
+    <div class="footer">
+      <div class="logo-badge"></div>
+      <div class="logo-text">MOY</div>
+      <div class="logo-tag">IQ</div>
+      <div class="footer-domain">moyiq.app</div>
+    </div>
+  </div>
+</body>
+</html>
